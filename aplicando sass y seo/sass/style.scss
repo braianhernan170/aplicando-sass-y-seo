@@ -1,0 +1,98 @@
+@import 'global';
+@import 'variables';
+
+// mixins
+
+@mixin size ($top, $left, $height){
+    top: $top;
+    left: $left;
+    height: $height;
+}
+@mixin aling ($ct, $ct, $fe){
+    justify-content: $ct;
+    text-align: $ct;
+    display: $fe;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: $headercolor;
+    @include size (0,0,70px);
+    display: flex;
+    align-items: center;
+    .logo{
+        width: 100px;
+    }
+    
+    nav{
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li{
+                display: inline-block;
+                margin: 0 .5rem;
+                &:hover {
+                    color: $hovercolor2;
+                    background-color: $hovercolor;
+                    border-radius: 6px;
+                    transition: 0,8s;
+                }
+            }
+            .link{
+                text-decoration: none;
+                font-size: 1.2rem;
+                color: $hovercolor2;
+            }
+          
+        }
+          
+    }
+
+}
+
+.flex-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    
+        .flex-item {
+        background-color: $color-img;
+        color: $colorL;
+        height: auto;
+        flex-basis: 100px;
+        margin: 10px;
+        border-radius: 6px;
+    }
+}
+
+
+article{
+    font-size: 26px;
+}
+
+
+footer{
+    background-color: $colorfooter;
+    @include aling(center, center, flex );
+    .title-section{
+        color: $hovercolor2;
+    }
+}
+.terminos-y-condiciones{
+    margin-top: 18px;
+}
+
+
+
+
+
+
+
+
+

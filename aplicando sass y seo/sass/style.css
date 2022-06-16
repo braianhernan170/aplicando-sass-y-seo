@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #d4d4d1;
+  top: 0;
+  left: 0;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  width: 100px;
+}
+
+header nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 .5rem;
+}
+
+header nav ul li:hover {
+  color: #1a1a1a;
+  background-color: white;
+  border-radius: 6px;
+  -webkit-transition: 0,8s;
+  transition: 0,8s;
+}
+
+header nav ul .link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #1a1a1a;
+}
+
+article {
+  font-size: 26px;
+}
+
+.flex-container {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.flex-container .flex-item {
+  background-color: #c2c0bd;
+  color: #272424;
+  height: auto;
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+  margin: 10px;
+  border-radius: 6px;
+}
+
+footer {
+  background-color: #504949;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+footer .title-section {
+  color: #1a1a1a;
+}
+
+.terminos-y-condiciones {
+  margin-top: 18px;
+}
+/*# sourceMappingURL=style.css.map */
